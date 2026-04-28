@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AJAX Web</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+
+<body onload="makerequest('page1.html','content')">
+
+<div class="container">
+  <h1>Ikh Zasag University</h1>
+
+  <nav>
+    <a onclick="makerequest('page1.html','content')">Оюутан</a>
+    <a onclick="makerequest('page2.html','content')">Багш</a>
+    <a onclick="makerequest('page3.html','content')">Сургалтын алба</a>
+    <a onclick="makerequest('page4.html','content')">Холбоо барих</a>
+    <a onclick="showHideCalendar()">📅 Calendar</a>
+  </nav>
+
+  <hr>
+
+  <div id="content"></div>
+  <div id="calendarBox"></div>
+</div>
+
+<!-- NOTE POPUP -->
+<div id="noteBox">
+  <h3 id="noteDate"></h3>
+
+  <h4>Тэмдэглэлүүд:</h4>
+  <ul id="noteList"></ul>
+
+  <input type="text" id="noteTitle" placeholder="Тэмдэглэлийн нэр"><br>
+  <textarea id="noteText" placeholder="Тайлбар"></textarea><br>
+
+  <input type="time" id="noteTime"><br>
+
+  <select id="ampm">
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+  </select><br>
+
+  <button onclick="addNote()">Хадгалах</button>
+  <button onclick="closeNote()">Хаах</button>
+</div>
+
+</body>
+</html>

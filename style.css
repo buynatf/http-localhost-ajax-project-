@@ -1,0 +1,78 @@
+body{
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(135deg,#1e3a8a,#3b82f6);
+  margin:0;
+}
+
+.container{
+  width:900px;
+  margin:50px auto;
+  padding:30px;
+  background:rgba(255,255,255,0.9);
+  border-radius:15px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1{
+  text-align:center;
+  color:#1e40af;
+}
+
+nav{
+  text-align:center;
+}
+nav a{
+  margin:5px;
+  padding:10px 20px;
+  background:#2563eb;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+input,textarea{
+  width:260px;
+  padding:10px;
+  margin:5px;
+}
+
+button{
+  padding:10px;
+  background:#22c55e;
+  color:white;
+  border:none;
+  border-radius:8px;
+}
+
+#calendarBox table{
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+}
+
+#calendarBox td{
+  padding:10px;
+  background:#9d58dd;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.today{
+  background:#34d399 !important;
+}
+
+.noteDay{
+  background:#ef4444 !important;
+  color:white;
+}
+
+#noteBox{
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
